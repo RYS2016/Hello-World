@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head> 
+     <meta charset='utf-8'>
+     <title>Hide and show</title>
+     <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet"> 
+    
+		<style type="text/css">
+			* {
+		     	text-align: center;
+		     }
+		    html {
+		    	background-color: silver;
+		     }
+		     h1 {
+		     	font-family: "Gloria Hallelujah";
+		     			     }
+		    button {
+		     	width: 10em;
+		     	height: 2.5em;
+		     	border: 0.5em double green;
+		     	background-color: yellow;
+		     	font-style: italic;
+		     }
+		     button:hover {
+		     	background-color: red;
+		     	color: white;
+		     }
+			.wrappedElement{
+				border: 1px solid red;
+				background-color: cyan;
+			}
+			img.wrappedElement {
+				border-color: brown;
+				border-width: 4px;
+			}
+			div.wrappedElement {
+				padding: 5px;
+			}
+		</style>
+
+	 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+	 <script>
+	 	$(document).ready(function() {
+	 	$("div, img").addClass("wrappedElement");
+        $("#hide").click(function() {
+        $("img").hide("slow");
+        $("#odd").click(function() {
+        $("img:odd").show("fast");
+        $("#even").click(function() {
+        $("img:even").show("slow");
+      	$("#right").click(function() {
+        $("#images img:last").insertBefore("#images img:first");
+        $("#left").click(function()  {
+        $("#images img:first").insertAfter("#images img:last");
+        $("#show").click(function() {
+        $("img").slideDown("slow"); 
+        });
+        });
+        });	
+        });
+	 	});		
+	 	});
+	 	});	
+  $( function() {
+    $( ".widget input[type=submit], .widget a, .widget button" ).button();
+    $( "button, input, a" ).click( function( event ) {
+      event.preventDefault();
+    } );
+  } );
+	 </script>
+</head>
+     <body>
+     <h1>Assignment 6</h1>
+       <div id="header">
+       	  <button id="hide">Hide</button>
+       	  <button id="odd">Show odd</button>
+       	  <button id="even">Show even</button>
+       	  <button id="right">Right Shift</button>
+       	  <button id="left">Left Shift</button>
+       </div>
+       
+       	     <div id="images">
+       	     	<img src="images/ukraine.png" class="figure" alt="flag" width="200" height="200">
+       	     	<img src="images/house.png" class="figure" alt="house" width="200" height="200">
+       	     	<img src="images/italy.png" class="figure" alt="italy_flag" width="200" height="200">
+       	     	<img src="images/watercolour.jpg" class="figure" alt="colours" width="200" height="200">
+       	     	<img src="images/housefly.png" class="figure" alt="insect" width="200" height="200">
+       	     </div>
+       
+       <div class="widget">
+          <button id="show">Show All</button>
+       	  
+       </div>
+
+	</body>
+</html>
