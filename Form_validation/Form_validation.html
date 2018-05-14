@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Form Validation and Submission</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script src="valid.js" type="text/javascript"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<h1 id="title">My first Validation and Submission Form</h1>
+		<form name="myForm" id="myForm" method="post" action="http://bucs601.com/submit.php" onsubmit="return validation(), valCheckBox();">
+			<div id="header">
+				<label for="firstName"><u>F</u>irst name:</label>
+				<input type="text" name="firstName" id="firstName" accesskey="F"  autofocus>
+                <br />
+				<p id="p1"></p>				
+				<label for="lastName"><u>L</u>ast Name:</label>
+				<input type="text" name="lastName" id="lastName" accesskey="L">	
+				<br />
+				<label for="facilitator">F<u>a</u>cilitator's Name:</label>
+				<input type="text" name="facilitator" id="facilitator" accesskey="a"  placeholder="Enter your name, Fazil!">
+			</div>	
+		<fieldset id="main">
+			<legend id="big">Make your choice!</legend>
+			<fieldset>
+					<legend class="small">Choose your hobby!</legend>
+						<input type="radio" name="hobby" value="Code">Code<br />
+						<input type="radio" name="hobby" value="Music">Music<br />
+						<input type="radio" name="hobby" value="Reading">Reading<br />
+						<input type="radio" name="hobby" value="Sport">Sport<br />
+						<input type="radio" name="hobby" value="Traveling" >Traveling<br />
+			</fieldset>
+			<br />
+			<fieldset>
+					<legend class="small">Choose your food!</legend>
+						<input type="checkbox" name="food" value="pizza">Pizza<br />
+						<input type="checkbox" name="food" value="spaghetti">Spaghetti<br />
+						<input type="checkbox" name="food" value="salad" >Salad<br />
+						<input type="checkbox" name="food" value="steak" >Steak<br />
+						<input type="checkbox" name="food" value="sandwich" >Sandwich<br />
+			</fieldset>
+		</fieldset>
+						<input type="submit" name="submit" value="Submit Entry">
+		</form>
+	</div>
+
+</html>

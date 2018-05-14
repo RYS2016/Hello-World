@@ -1,0 +1,87 @@
+body {
+	background-color: #FDF5E6;
+}
+#myForm{
+    max-width: 450px;
+    background: #FAFAFA;
+    padding: 30px;
+    margin: 50px auto;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #305A72;
+}
+h1 {
+	text-align: center;
+	color: #191970;
+	text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.35);
+}
+label {
+	font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #00008B;
+}
+#header {
+	background-color: #DCDCDC;
+	padding: 8px;
+    outline: none;
+    border: 2px solid #B0CFE0;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+ }
+ #firstName, #lastName, #facilitator {
+ 	font-family: Arial, Helvetica, sans-serif;
+ 	text-align: left;
+ 	color: #483D8B;
+ 	display: inline-block;
+    box-sizing: border-box;
+    -
+    \webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    padding: 0.1px;
+    border-radius: 6px;
+    -webkit-border-radius:2px;
+    -moz-border-radius:6px;
+    border: 2px solid #fff;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+    -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.33);
+
+ }	
+
+input[type="submit"] {
+ 	width: 100%;
+ 	margin-top: 2em;
+    -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+    box-shadow: inset 0px 1px 0px 0px #3985B1;
+    background-color: #216288;
+    border: 1px solid #17445E;
+    display: inline-block;
+    cursor: pointer;
+    color: #FAFAFA;
+    padding: 8px 18px;
+    text-decoration: none;
+    font: 12px Arial, Helvetica, sans-serif;
+}
+#big {
+	color:  #28039E;
+	text-decoration: underline;
+
+}
+.small {
+	color: #29769A;
+	text-decoration: transparent;
+}
+#main, fieldset {
+	background-color:  	#DCDCDC;
+	padding: 8px;
+    outline: none;
+    border: 1px solid #B0CFE0;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+}
+
+ input[type="submit"]:hover {
+    background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+    background-color: #28739E;
+}
+
