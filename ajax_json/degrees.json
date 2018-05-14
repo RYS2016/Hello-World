@@ -1,0 +1,28 @@
+{
+	"degrees": [
+		{
+		 "degree": {
+		   "School": "Taras Shevchenko National University of Kiev",
+		   "Program": "International Law",
+		   "Type": "Master of Science",
+		   "Year": "2005"
+		 }  
+		},
+       {
+       	 "degree":  {
+       	   "School": "National Economic University of Kiev",
+		   "Program": "General Business",
+		   "Type": "Master of Science",
+		   "Year": "2012"
+		 }  
+		},
+		{
+		 "degree": {
+		   "School": "Boston University",
+		   "Program": "Web Application Development",
+		   "Type": "Certificate",
+		   "Year": "2018"
+		 }  
+		}	
+	]
+}			   

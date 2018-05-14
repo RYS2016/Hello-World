@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>myDegrees</title>
+	<style>
+		body {
+			background-color: #a6c0e3;
+			text-align: center;
+			
+		} 
+		
+
+		h1 {
+			font-family: "Helvetica", "Arial", sans-serif;
+			font-size: 3em;
+			color: #777;
+			
+			text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+		}
+		button {
+			margin-top: 50px;
+			font-family: "Helvetica", "Arial", sans-serif;
+			font-size: 1.2em;
+			color: white;
+			border: 22em;
+			border-radius: 15px;
+			background-color: #357;
+			padding: 15px;
+			border-bottom: 5px solid;
+			color: black;		
+		}
+		footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			height: 40px;
+			width: 100%;
+			background: transparent;
+			border-top: 0.2em solid;
+		}
+		footer p {
+		font-size: 14px;
+		text-align: center;
+		font-weight: bold;
+		color: black;
+		}
+	</style>
+	<script src=degrees.js></script>	  
+</head>
+<body>
+	<header>
+		<h1>My Degree information</h1>
+	</header>
+	<section>
+		<button id="btn1" onClick="getDegrees()">Load Degree Data</button>
+	</section>
+	<footer>
+		<p>&copy; 2017 Yaroslav Rykal</p>
+	</footer>
+</body>
+</html>
